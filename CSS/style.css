@@ -103,40 +103,28 @@ h1 {
     display: block;
 }
 
-/*Section Toggle for Area and Perimeter*/
+/*SECTION CALCULATION*/
 
+.calculation {
+    display: none;
+    align-items: center;
+}
 
-.calculate-toggle{
+.calculation.active {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
     gap: 24px;
-    width: 50%;
-
+    width: 80%;
 }
-.area-button {
-    flex: 1;
-    font-family: 'Inter', sans-serif;
-    border: none;
-    border-radius: 8px;
-    padding: 16px;
-}
-
-.perimeter-button {
-    flex: 1;
-    font-family: 'Inter', sans-serif;
-    border: none;
-    border-radius: 8px;
-    padding: 16px;
-}
-
-/*SECTION AREA*/
 
 /*Description Area*/
-
 
 .description-section {
     background-color: #eeefff;
     padding: 24px;
-    width: 50%;
+    width: 100%;
     border-radius: 16px;
     color: #2a2a2a;
     display: flex;
@@ -198,14 +186,6 @@ h1 {
 
 /*Section Calculation for Area*/
 
-.calculation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 600;
-    gap: 16px;
-}
-
 .input-button {
     display: flex;
     flex-direction: column;
@@ -215,7 +195,7 @@ h1 {
 }
 
 input {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     border: none;
     border-radius: 8px;
     padding: 12px 20px;
@@ -243,7 +223,7 @@ input {
 .reset-button {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    background-color: #eeefff;
+    background-color: #d3d4e4;
     color: #2a2a2a;
     padding: 10px 20px;
     border: none;
@@ -265,10 +245,10 @@ input {
 /*SECTION RESULT*/
 
 #result-section-area {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 4px;
-    align-items: baseline;
+    align-items: center;
 }
 
 .result-card {
@@ -292,9 +272,47 @@ input {
 
 #result-value-area {
     padding: 16px;
-    background-color: #f2f2f2;
-    width: 100%;
+    background-color: #ffffff;
+    width: fit-content;
     border: 0;
     border-radius: 8px;
     text-align: center;
 }
+
+/*Section Calculation for Perimeter*/
+
+#result-section-perimeter {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+#result-value-perimeter {
+    padding: 16px;
+    background-color: #ffffff;
+    width: fit-content;
+    border: 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/*RECTANGLE*/
+
+/*Section Calculation for Area*/
+#result-section-perimeter-rectangle {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: baseline;
+}
+
+#result-value-perimeter-rectangle {
+    padding: 16px;
+    background-color: #ffffff;
+    width: fit-content;
+    border: 0;
+    border-radius: 8px;
+    text-align: center;
+}
+

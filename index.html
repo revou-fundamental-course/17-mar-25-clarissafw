@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
   
 </head>
-<!--Section Header-->
 <body>
+    <!--Section Header-->
     <header class="main-header">
         <h1>KATIK</h1>
         <p class="slogan">Fast. Simple. Accurate.</p>
@@ -37,76 +37,182 @@
         </div>
     </div>
 
-<!--Section Toggle for Area and Perimeter-->
-        <div class="calculate-toggle">
-            <button class="btn area-button active">Area</button>
-            <button class="btn perimeter-button">Perimeter</button>
-        </div>
+<!--SECTION SQUARE-->
+<!--SECTION CALCULATION-->
+    <section class="calculation square active">
+        <p class="calculation-tag">Area</p>
+    <!--SECTION AREA-->
+            <!--Description Area-->
+                <section class="description-section square area active">
+                    <div class="section-image square">
+                        <img src="assets/Square.png" alt="Square">
+                    </div>
 
-<!--SECTION AREA-->
-    <!--Description Area-->
-        <section class="description-section area active">
-            <div class="section-image square">
-                <img src="assets/Square.png" alt="Square">
-            </div>
+                    <div class="description-notes area">
+                        <!--AREA FORMULA-->
+                        <div class="formula area">A = s x s</div>
+                        
+                        <!--NOTES-->
+                        <section class="notes-section">
+                            <div class="notes area">
+                                <p>Notes:</p>
+                            </div>
+                            <div class="notes-content area">
+                                <p>A = Area</p>
+                                <p>s = Side</p>
+                            </div>
+                        </section>
+                    </div>
 
-            <div class="description-notes area">
-                
-                <!--AREA FORMULA-->
-                <div class="formula area">A = s x s</div>
-                
-                <!--NOTES-->
-                <section class="notes-section">
-                    <div class="notes area">
+                    <!--Section Calculation for Area-->
+                        <section class="calculation active">
+                            <p>Calculate Square Area</p>
+                            
+                            <!--Section Input Side Value-->
+                            <section class="input-button">
+                                <input type="number" id="side-value-area" placeholder="Enter side value">
+                            
+                            <!--Section Area Result-->
+                            <div id="result-section-area" class="square">
+                                <p>A = s x s</p>
+                                <p class="calculation-step-area"></p>
+
+                                <!--Section result-->
+                                <div class="result-card area">
+                                    <p>Square Area</p>
+                                    <p id="result-value-area"></p>
+                                </div>
+                            </div>
+                            <!--Buttons-->
+                                <div class="calculate-and-reset">
+                                    <button class="reset-button area">Reset</button>
+                                    <button class="calculate-button area">Calculate</button>
+                                </div>
+                            </section>    
+                        </section>
+                </section>
+
+    <!--SECTION PERIMETER-->
+         <p class="calculation-tag">Perimeter</p>
+            <section class="description-section square perimeter inactive">
+                <div class="section-image">
+                    <img src="assets/Square.png" alt="Square">
+                </div>
+        
+                <!--Section Description Perimeter-->
+                <div class="description-notes perimeter">
+                    
+                    <!--PERIMETER FORMULA-->
+                    <div class="formula perimeter">P = 4 x s</div>
+                    
+                    <!--NOTES-->
+                    <div class="notes perimeter">
                         <p>Notes:</p>
-                     </div>
-                    <div class="notes-content area">
-                        <p>A = Area</p>
+                    </div>
+                    <div class="notes-content perimeter">
+                        <P>P = Perimeter</P>
                         <p>s = Side</p>
                     </div>
-                </section>
-            </div>
-        </section>
-
-    <!--Section Calculation for Area-->
-        <section class="calculation">
-            <p>Calculate Square Area</p>
-            
-            <!--Section Input Side Value-->
-                <section class="input-button">
-                    <input type="number" id="side-value area" placeholder="Enter side value">
-               
-                <!--Section Area Result-->
-                <div id="result-section-area" style="display: none;">
-                    <p>A = s x s</p>
-                    <p class="calculation-step-area"></p>
                 </div>
 
-                <!--Section result-->
-                <div class="result-card area" style="display: none;">
-                        <p>Square Area</p>
-                        <p id="result-value-area"></p>
+        <!--Section Calculation for Perimeter-->
+                <div class="calculation active perimeter">
+                    <p>Calculate Square Perimeter</p>
+                
+                <!--Section Input Side Value-->
+                <section class="input-button">
+                    <input type="number" id="side-value-perimeter" placeholder="Enter side value">
+                
+                 <!--Section Perimeter Result-->
+                 <div id="result-section-perimeter" class="square">
+                    <p>P = 4 x s</p>
+                    <p id="calculation-step-perimeter"></p>
+                    
+                    <!--Section result-->
+                    <div class="result-card perimeter">
+                        <p>Square Perimeter</p>
+                        <p id="result-value-perimeter"></p>
+                    </div>
                 </div>
 
                 <!--Buttons-->
                     <div class="calculate-and-reset">
-                        <button class="reset-button area">Reset</button>
-                        <button class="calculate-button area">Calculate</button>
+                        <button class="reset-button perimeter">Reset</button>
+                        <button class="calculate-button perimeter">Calculate</button>
                     </div>
-                </section>    
-        </section>
+                </section>
+                </div>
+            </section>
+    </section>
+
+<!--SECTION RECTANGLE-->
+<!--SECTION CALCULATION-->
+<section class="calculation rectangle">
+    <p class="calculation-tag">Area</p>
+<!--SECTION AREA-->
+        <!--Description Area-->
+            <section class="description-section rectangle area active">
+                <div class="section-image rectangle">
+                    <img src="assets/Rectangle.png" alt="Rectangle">
+                </div>
+
+                <div class="description-notes area">
+                    <!--AREA FORMULA-->
+                    <div class="formula area">A = L x W</div>
+                    
+                    <!--NOTES-->
+                    <section class="notes-section">
+                        <div class="notes area">
+                            <p>Notes:</p>
+                        </div>
+                        <div class="notes-content area">
+                            <p>A = Area</p>
+                            <p>L = Length</p>
+                            <p>W = Width</p>
+                        </div>
+                    </section>
+                </div>
+
+                <!--Section Calculation for Area-->
+                    <section class="calculation">
+                        <p>Calculate Rectangle Area</p>
+                        
+                        <!--Section Input Side Value-->
+                        <section class="input-button">
+                            <input type="number" id="length-value-area" placeholder="Enter length value">
+                            <input type="number" id="width-value-area" placeholder="Enter width value">
+                        <!--Section Area Result-->
+                        <div id="result-section-area-rectangle" style="display: none;">
+                            <p>A = L x W</p>
+                            <p class="calculation-step-area"></p>
+
+                            <!--Section result-->
+                            <div class="result-card area">
+                                <p>Rectangle Area</p>
+                                <p id="result-value-area-rectangle"></p>
+                            </div>
+                        </div>
+                        <!--Buttons-->
+                            <div class="calculate-and-reset">
+                                <button class="reset-button area">Reset</button>
+                                <button class="calculate-button area">Calculate</button>
+                            </div>
+                        </section>    
+                    </section>
+            </section>
 
 <!--SECTION PERIMETER-->
-        <section class="description-section perimeter inactive" style="display: none;">
+     <p class="calculation-tag">Perimeter</p>
+        <section class="description-section rectangle perimeter inactive">
             <div class="section-image">
-                <img src="assets/Square.png" alt="Square">
+                <img src="assets/Rectangle.png" alt="Rectangle">
             </div>
     
-            <!--Section Description Parameter-->
+            <!--Section Description Perimeter-->
             <div class="description-notes perimeter">
                 
                 <!--PERIMETER FORMULA-->
-                <div class="formula perimeter">P = 4 x s</div>
+                <div class="formula perimeter">P = 2(L + W)</div>
                 
                 <!--NOTES-->
                 <div class="notes perimeter">
@@ -114,36 +220,41 @@
                 </div>
                 <div class="notes-content perimeter">
                     <P>P = Perimeter</P>
-                    <p>s = Side</p>
+                    <p>L = Length</p>
+                    <p>W = Width</p>
                 </div>
             </div>
 
     <!--Section Calculation for Perimeter-->
             <div class="calculation">
-                <p>Calculate Square Perimeter</p>
+                <p>Calculate Rectangle Perimeter</p>
             
             <!--Section Input Side Value-->
-                <input type="number" id="side-value-perimeter" placeholder="Enter side value">
-            
-            <!--Buttons-->
-                <div class="calculate-and-reset">
-                    <button id="calculate-perimeter">Calculate</button>
-                    <button id="reset-perimeter">Reset</button>
-                </div>
-            
-            <!--Section Perimeter Result-->
-                <div id="result-section-perimeter" style="display:none;">
-                    <p>P = 4 x s</p>
-                    <p id="calculation-step-perimeter"></p>
-                    
-                    <!--Section result-->
-                    <div class="result-card">
-                        <p>Square Perimeter</p>
-                        <p id="result-value-perimeter"></p>
-                    </div>
+            <section class="input-button">
+                <input type="number" id="length-value-perimeter" placeholder="Enter length value">
+                <input type="number" id="width-value-perimeter" placeholder="Enter width value">
+             <!--Section Perimeter Result-->
+             <div id="result-section-perimeter-rectangle">
+                <p>P = 2(L + W)</p>
+                <p id="calculation-step-perimeter"></p>
+                
+                <!--Section result-->
+                <div class="result-card perimeter">
+                    <p>Rectangle Perimeter</p>
+                    <p id="result-value-perimeter-rectangle"></p>
                 </div>
             </div>
+
+            <!--Buttons-->
+                <div class="calculate-and-reset">
+                    <button class="reset-button perimeter">Reset</button>
+                    <button class="calculate-button perimeter">Calculate</button>
+                </div>
+            </section>
+            </div>
         </section>
+</section>
+
 <!--JS External-->        
 <script src="js/script.js"></script>
 
