@@ -88,3 +88,79 @@ resetPerimeterBtn.addEventListener('click', () => {
     perimeterInput.value = '';
     resultSectionPerimeter.style.display = 'none';
 });
+
+
+// SECTION AREA RECTANGLE
+// Elements selection
+const lengthInputArea = document.getElementById('length-value-area');
+const widthInputArea = document.getElementById('width-value-area');
+
+const resultSectionAreaRectangle = document.getElementById('result-section-area-rectangle');
+const calculationStepAreaRectangle = document.querySelector('.calculation-step-area-rectangle');
+const resultValueAreaRectangle = document.getElementById('result-value-area-rectangle');
+
+const calculateRectangleAreaBtn = document.querySelector('.calculate-button.rectangle-area');
+const resetRectangleAreaBtn = document.querySelector('.reset-button.rectangle-area');
+
+// Calculate Area Function
+calculateRectangleAreaBtn.addEventListener('click', () => {
+    const length = parseFloat(lengthInputArea.value);
+    const width = parseFloat(widthInputArea.value);
+
+    if (!isNaN(length) && !isNaN(width) && length > 0 && width > 0) {
+        const area = length * width;
+        
+        calculationStepAreaRectangle.textContent = `A = ${length} x ${width}`;
+        resultValueAreaRectangle.textContent = area;
+        
+        resultSectionAreaRectangle.style.display = 'flex';
+    } else {
+        resultSectionAreaRectangle.style.display = 'none';
+        alert('Enter valid length and width values starting from 1.');
+    }
+});
+
+// Reset Button Function
+resetRectangleAreaBtn.addEventListener('click', () => {
+    lengthInputArea.value = '';
+    widthInputArea.value = '';
+    resultSectionAreaRectangle.style.display = 'none';
+});
+
+
+
+// SECTION PERIMETER RECTANGLE
+// Elements selection
+const lengthInput = document.getElementById('length-value-perimeter');
+const widthInput = document.getElementById('width-value-perimeter');
+const resultSectionPerimeterRectangle = document.getElementById('result-section-perimeter-rectangle');
+const calculationStepPerimeterRectangle = document.getElementById('calculation-step-perimeter-rectangle');
+const resultValuePerimeterRectangle = document.getElementById('result-value-perimeter-rectangle');
+
+const calculateRectanglePerimeterBtn = document.querySelector('.calculate-button.rectangle-perimeter');
+const resetRectanglePerimeterBtn = document.querySelector('.reset-button.rectangle-perimeter');
+
+// Calculate Perimeter Function
+calculateRectanglePerimeterBtn.addEventListener('click', () => {
+    const length = Number(lengthInput.value);
+    const width = Number(widthInput.value);
+
+    if (length > 0 && width > 0) {
+        const perimeter = 2 * (length + width);
+        resultValuePerimeterRectangle.textContent = perimeter;
+        calculationStepPerimeterRectangle.textContent = `P = 2(${length} + ${width})`;
+
+        resultSectionPerimeterRectangle.style.display = 'flex';
+    } else {
+        resultSectionPerimeterRectangle.style.display = 'none';
+        alert('Enter valid length and width values starting from 1.');
+    }
+});
+
+// Reset Button Function
+resetRectanglePerimeterBtn.addEventListener('click', () => {
+    lengthInput.value = '';
+    widthInput.value = '';
+    resultSectionPerimeterRectangle.style.display = 'none';
+});
+
