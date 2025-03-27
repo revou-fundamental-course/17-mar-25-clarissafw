@@ -1,0 +1,300 @@
+body {
+    font-family:'Inter', sans-serif;
+    background-color: #2a2a2a;
+    color: #A3A2F8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.main-header {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    color: #A3A2F8;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+/*Katik*/
+h1 {
+    margin: 0;
+}
+
+/*Fast. Simple. Accurate*/
+.slogan {
+    font-weight: 100;
+    margin: 0;
+}
+
+/*Calculate the area & perimeter of a square in seconds!. Choose a feature below and start crunching numbers.*/
+.instruction {
+    color: #f2f2f2;
+}
+
+/* icon button square & rectangle*/
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/*Navbar Square or Rectangle*/
+
+.nav-fitur {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #f2f2f2;
+    padding: 8px;
+    border-radius: 100px;
+    width: fit-content;
+}
+
+.btn {
+    background-color: #f2f2f2;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #d5d5eb;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.btn.active {
+    background-color: #A3A2F8;
+}
+
+.btn-square {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter', sans-serif;
+    padding: 16px;
+    border: none;
+    border-radius: 100px;
+}
+
+.btn-rectangle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter', sans-serif;
+    padding: 16px;
+    border: none;
+    border-radius: 100px;
+}
+
+.btn-text {
+    display: none;
+    margin: 0;
+}
+
+.btn.active .btn-text {
+    display: block;
+}
+
+/*Section Toggle for Area and Perimeter*/
+
+
+.calculate-toggle{
+    display: flex;
+    gap: 24px;
+    width: 50%;
+
+}
+.area-button {
+    flex: 1;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.perimeter-button {
+    flex: 1;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+/*SECTION AREA*/
+
+/*Description Area*/
+
+
+.description-section {
+    background-color: #eeefff;
+    padding: 24px;
+    width: 50%;
+    border-radius: 16px;
+    color: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;    
+}
+
+.description-notes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+    width: 100%;
+}
+
+.formula {
+    
+    background-color: #2a2a2a;
+    color: #A3A2F8;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.notes-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
+}
+
+.notes-content p {
+    margin: 0;
+    line-height: 1.50;
+}
+.notes p {
+    margin: 0;
+    line-height: 1.50;
+}
+
+.notes-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #A3A2F8;
+    margin: 0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    align-items: baseline;
+    gap: 4px;
+    box-sizing: border-box;
+}
+
+/*Section Calculation for Area*/
+
+.calculation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    gap: 16px;
+}
+
+.input-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%
+}
+
+input {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    width: 100%;
+}
+
+.calculate-and-reset {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.calculate-button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    background-color: #6E6CE4;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.reset-button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background-color: #eeefff;
+    color: #2a2a2a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.calculate-button:hover {
+    background-color: #504ebe;
+    transform: scale(1.05);
+}
+
+.reset-button:hover {
+    background-color: #d5d5eb;
+    transform: scale(1.05);
+}
+
+
+/*SECTION RESULT*/
+
+#result-section-area {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: baseline;
+}
+
+.result-card {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 20px;
+    background-color: #A3A2F8;
+    border: 0;
+    border-radius: 16px;
+    align-items: center;
+}
+
+.result-card p {
+    font-weight: 600;
+    color: #2a2a2a;
+    align-items: end;
+    text-align: right;
+    width: 100%;
+}
+
+#result-value-area {
+    padding: 16px;
+    background-color: #f2f2f2;
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    text-align: center;
+}
